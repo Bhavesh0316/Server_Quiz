@@ -24,6 +24,14 @@ npm install --save-dev @types/jsonwebtoken
 
 <!-- Postgres -->
 npm install postgres
+apt install postgresql
+sudo apt install -y postgresql-common
+sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+
+<!-- confige psql if fatal error -->
+export $(grep -v '^#' .env | xargs)
+echo $DATABASE_URL
+
 
 <!-- create tsconfig.json -->
 npx tsc --init
