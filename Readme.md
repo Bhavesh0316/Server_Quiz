@@ -1,0 +1,29 @@
+<!-- Install  TypeScript-->
+npm install -g typescript
+npm install --save-dev ts-node
+
+<!-- create tsconfig.json -->
+npx tsc --init
+
+<!-- Install Express -->
+npm install express
+npm install --save-dev @types/express
+
+<!-- Install dotenv -->
+npm install dotenv
+npm install --save-dev @types/dotenv
+
+<!-- Install cors -->
+npm install cors
+npm install --save-dev @types/cors
+
+<!-- Bcrypt -->
+npm install bcryptjs
+npm install --save-dev @types/bcryptjs
+
+<!-- JWTToken -->
+npm install jsonwebtoken
+npm install --save-dev @types/jsonwebtoken
+
+<!-- Postgres -->
+npm install postgres
