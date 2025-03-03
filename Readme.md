@@ -2,9 +2,6 @@
 npm install -g typescript
 npm install --save-dev ts-node
 
-<!-- create tsconfig.json -->
-npx tsc --init
-
 <!-- Install Express -->
 npm install express
 npm install --save-dev @types/express
@@ -27,3 +24,6 @@ npm install --save-dev @types/jsonwebtoken
 
 <!-- Postgres -->
 npm install postgres
+
+<!-- create tsconfig.json -->
+npx tsc --init

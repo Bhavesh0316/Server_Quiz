@@ -1,5 +1,6 @@
 import bcrypt from "bcryptjs";
-import sql from "../config/db";
+// import sql from "../config/db";
+import {sql} from "../config/db";
 
 const registerUser = async (username: string, email: string, password: string) => {
     try {

@@ -4,6 +4,15 @@ import loginUser from "../controllers/login";
 
 const router = express.Router();
 
+// End point
+router.get("/", (req, res) => {
+    res.send("Welcome to Users Page");
+});
+
+router.get("/register", (req, res) => {
+    res.send("Welcome to Register User Page");
+});
+
 // Register User Route
 router.post("/register", async (req, res):Promise<any>=> {
     const { username, email, password } = req.body;
@@ -17,6 +26,10 @@ router.post("/register", async (req, res):Promise<any>=> {
     }
 
     res.status(201).json({ message: "User registered successfully", user: result });
+});
+
+router.get("/login", (req, res) => {
+    res.send("Welcome to Login User Page");
 });
 
 // Login User Route
