@@ -32,6 +32,8 @@ sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 export $(grep -v '^#' .env | xargs)
 echo $DATABASE_URL
 
+<!-- Install redis Socket -->
+npm install redis@4.7.0 socket.io@4.8.1
 
 <!-- create tsconfig.json -->
 npx tsc --init
