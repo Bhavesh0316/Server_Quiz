@@ -1,6 +1,5 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-// import sql from "../config/db";
 import {sql} from "../config/db";
 import dotenv from "dotenv";
 

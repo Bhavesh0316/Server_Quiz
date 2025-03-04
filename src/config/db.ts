@@ -16,7 +16,5 @@ const checkConnection = async () => {
     }
 };
 
-checkConnection();
-
 export { sql, checkConnection };
 
