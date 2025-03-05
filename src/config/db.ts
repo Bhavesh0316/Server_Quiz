@@ -3,6 +3,12 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
+// Validate DATABASE_URL 
+if (!process.env.DATABASE_URL) {
+    console.error("DATABASE_URL is not defined in .env file.");
+    process.exit(1); 
+}
+
 const sql = postgres(process.env.DATABASE_URL!, {
     ssl: "require", 
 });

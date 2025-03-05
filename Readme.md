@@ -35,5 +35,8 @@ echo $DATABASE_URL
 <!-- Install redis Socket -->
 npm install redis@4.7.0 socket.io@4.8.1
 
+<!-- Install uuid -->
+npm install uuid
+
 <!-- create tsconfig.json -->
 npx tsc --init

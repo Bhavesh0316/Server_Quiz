@@ -20,3 +20,11 @@ npx ts-node src/server.ts
     "password":"securepassword123"
 }
 
+<!-- Queue -->
+{
+    "Authorization": ""
+}
+
+<!-- Testpoint Socket -->
+Authorization : "jwt-token"
+
